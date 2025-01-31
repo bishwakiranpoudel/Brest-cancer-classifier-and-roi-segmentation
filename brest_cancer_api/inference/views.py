@@ -25,7 +25,7 @@ class PredictView(APIView):
                 outputs = ModelConfig.classifier(transformed_image)
                 probabilities = torch.nn.functional.softmax(outputs[0], dim=0)
                 predicted_class = torch.argmax(probabilities).item()
-                class_labels = ['normal', 'benign', 'malignant']
+                class_labels = ["benign", "malignant", "normal"]
 
             # If 'normal', return predicted class
             if class_labels[predicted_class] == 'normal':
