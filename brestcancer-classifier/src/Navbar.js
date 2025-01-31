@@ -11,11 +11,7 @@ const Navbar = () => {
               About
             </a>
           </li>
-          <li>
-            <a href="#contact" className="hover:underline">
-              Contact
-            </a>
-          </li>
+          
         </ul>
       </div>
     </nav>
